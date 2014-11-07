@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GAS.WinUI", "GAS.UI\GAS.WinUI.csproj", "{EA76B36A-8787-4786-B7AE-DB9851C7B46D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GAS.Server", "GAS.Server", "{F9A295DC-5710-4EA2-9272-E7F805C0E73A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GAS.Client", "GAS.Client", "{90F5B2B8-8083-4F60-A07A-540111050D84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GAS.Net", "GAS.Net\GAS.Net.csproj", "{3B647D91-325A-4138-A87F-9940BBE1B664}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GAS.BLL.Contracts", "GAS.BLL.Contracts\GAS.BLL.Contracts.csproj", "{8D2163D1-8139-4FE3-B2A8-FDD7694906B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GAS.BLL.Host", "GAS.BLL.Host\GAS.BLL.Host.csproj", "{9C134217-6857-4231-B98E-7853D784AD50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GAS.DAL", "GAS.DAL\GAS.DAL.csproj", "{9498E292-AF2C-4BE5-BB9D-D2A392494D3E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA76B36A-8787-4786-B7AE-DB9851C7B46D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA76B36A-8787-4786-B7AE-DB9851C7B46D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA76B36A-8787-4786-B7AE-DB9851C7B46D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA76B36A-8787-4786-B7AE-DB9851C7B46D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B647D91-325A-4138-A87F-9940BBE1B664}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B647D91-325A-4138-A87F-9940BBE1B664}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B647D91-325A-4138-A87F-9940BBE1B664}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B647D91-325A-4138-A87F-9940BBE1B664}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D2163D1-8139-4FE3-B2A8-FDD7694906B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D2163D1-8139-4FE3-B2A8-FDD7694906B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D2163D1-8139-4FE3-B2A8-FDD7694906B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D2163D1-8139-4FE3-B2A8-FDD7694906B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C134217-6857-4231-B98E-7853D784AD50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C134217-6857-4231-B98E-7853D784AD50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C134217-6857-4231-B98E-7853D784AD50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C134217-6857-4231-B98E-7853D784AD50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9498E292-AF2C-4BE5-BB9D-D2A392494D3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9498E292-AF2C-4BE5-BB9D-D2A392494D3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9498E292-AF2C-4BE5-BB9D-D2A392494D3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9498E292-AF2C-4BE5-BB9D-D2A392494D3E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

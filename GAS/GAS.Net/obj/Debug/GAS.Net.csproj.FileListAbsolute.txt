@@ -1,0 +1,5 @@
+K:\Users\SJP\Documents\GitHub\GasManage\AppServer\GAS.Net.dll
+K:\Users\SJP\Documents\GitHub\GasManage\AppServer\GAS.Net.pdb
+K:\Users\SJP\Documents\GitHub\GasManage\GAS\GAS.Net\obj\Debug\GAS.Net.csprojResolveAssemblyReference.cache
+K:\Users\SJP\Documents\GitHub\GasManage\GAS\GAS.Net\obj\Debug\GAS.Net.dll
+K:\Users\SJP\Documents\GitHub\GasManage\GAS\GAS.Net\obj\Debug\GAS.Net.pdb

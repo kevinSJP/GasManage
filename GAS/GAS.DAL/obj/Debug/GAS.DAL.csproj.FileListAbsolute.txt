@@ -1,0 +1,4 @@
+K:\Users\SJP\Documents\GitHub\GasManage\AppServer\GAS.DAL.dll
+K:\Users\SJP\Documents\GitHub\GasManage\AppServer\GAS.DAL.pdb
+K:\Users\SJP\Documents\GitHub\GasManage\GAS\GAS.DAL\obj\Debug\GAS.DAL.dll
+K:\Users\SJP\Documents\GitHub\GasManage\GAS\GAS.DAL\obj\Debug\GAS.DAL.pdb

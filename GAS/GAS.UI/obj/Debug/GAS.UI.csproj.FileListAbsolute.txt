@@ -1,0 +1,7 @@
+K:\Users\SJP\Documents\GitHub\GasManage\GAS\GAS.UI\bin\Debug\GAS.UI.exe
+K:\Users\SJP\Documents\GitHub\GasManage\GAS\GAS.UI\bin\Debug\GAS.UI.pdb
+K:\Users\SJP\Documents\GitHub\GasManage\GAS\GAS.UI\obj\Debug\GAS.UI.csprojResolveAssemblyReference.cache
+K:\Users\SJP\Documents\GitHub\GasManage\GAS\GAS.UI\obj\Debug\GAS.UI.Properties.Resources.resources
+K:\Users\SJP\Documents\GitHub\GasManage\GAS\GAS.UI\obj\Debug\GAS.UI.csproj.GenerateResource.Cache
+K:\Users\SJP\Documents\GitHub\GasManage\GAS\GAS.UI\obj\Debug\GAS.UI.exe
+K:\Users\SJP\Documents\GitHub\GasManage\GAS\GAS.UI\obj\Debug\GAS.UI.pdb

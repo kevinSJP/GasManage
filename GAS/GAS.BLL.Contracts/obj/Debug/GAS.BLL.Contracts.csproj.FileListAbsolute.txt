@@ -1,0 +1,5 @@
+K:\Users\SJP\Documents\GitHub\GasManage\AppServer\GAS.BLL.Contracts.dll
+K:\Users\SJP\Documents\GitHub\GasManage\AppServer\GAS.BLL.Contracts.pdb
+K:\Users\SJP\Documents\GitHub\GasManage\GAS\GAS.BLL.Contracts\obj\Debug\GAS.BLL.Contracts.csprojResolveAssemblyReference.cache
+K:\Users\SJP\Documents\GitHub\GasManage\GAS\GAS.BLL.Contracts\obj\Debug\GAS.BLL.Contracts.dll
+K:\Users\SJP\Documents\GitHub\GasManage\GAS\GAS.BLL.Contracts\obj\Debug\GAS.BLL.Contracts.pdb

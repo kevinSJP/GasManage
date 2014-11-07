@@ -1,0 +1,5 @@
+K:\Users\SJP\Documents\GitHub\GasManage\AppServer\GAS.BLL.Host.dll
+K:\Users\SJP\Documents\GitHub\GasManage\AppServer\GAS.BLL.Host.pdb
+K:\Users\SJP\Documents\GitHub\GasManage\GAS\GAS.BLL.Host\obj\Debug\GAS.BLL.Host.csprojResolveAssemblyReference.cache
+K:\Users\SJP\Documents\GitHub\GasManage\GAS\GAS.BLL.Host\obj\Debug\GAS.BLL.Host.dll
+K:\Users\SJP\Documents\GitHub\GasManage\GAS\GAS.BLL.Host\obj\Debug\GAS.BLL.Host.pdb
