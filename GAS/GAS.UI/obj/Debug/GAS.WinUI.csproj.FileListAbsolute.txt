@@ -5,3 +5,11 @@ K:\Users\SJP\Documents\GitHub\GasManage\AppServer\GAS.UI.pdb
 K:\Users\SJP\Documents\GitHub\GasManage\GAS\GAS.UI\obj\Debug\GAS.WinUI.csprojResolveAssemblyReference.cache
 K:\Users\SJP\Documents\GitHub\GasManage\GAS\GAS.UI\obj\Debug\GAS.UI.Properties.Resources.resources
 K:\Users\SJP\Documents\GitHub\GasManage\GAS\GAS.UI\obj\Debug\GAS.WinUI.csproj.GenerateResource.Cache
+K:\Users\SJP\Documents\GitHub\GasManage\GAS\GAS.UI\obj\Debug\GAS.UI.F_Login.resources
+K:\Users\SJP\Documents\GitHub\GasManage\GAS\GAS.UI\obj\Debug\GAS.UI.F_UserForm.resources
+K:\Users\SJP\Documents\GitHub\GasManage\GAS\GAS.UI\obj\Debug\GAS.UI.AdminForm.resources
+K:\Users\SJP\Documents\GitHub\GasManage\GAS\GAS.UI\obj\Debug\GAS.UI.CtrlView.EquipConfig.resources
+K:\Users\SJP\Documents\GitHub\GasManage\GAS\GAS.UI\obj\Debug\GAS.UI.CtrlView.Forecast.resources
+K:\Users\SJP\Documents\GitHub\GasManage\GAS\GAS.UI\obj\Debug\GAS.UI.CtrlView.Query.resources
+K:\Users\SJP\Documents\GitHub\GasManage\GAS\GAS.UI\obj\Debug\GAS.UI.CtrlView.FileConfig.resources
+K:\Users\SJP\Documents\GitHub\GasManage\GAS\GAS.UI\obj\Debug\GAS.UI.CtrlView.SetAlgorithm.resources

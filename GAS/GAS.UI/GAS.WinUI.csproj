@@ -42,16 +42,86 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph, Version=5.1.5.28844, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\AppServer\ZedGraph.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="AdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CtrlView\EquipConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CtrlView\EquipConfig.Designer.cs">
+      <DependentUpon>EquipConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CtrlView\FileConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CtrlView\FileConfig.Designer.cs">
+      <DependentUpon>FileConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CtrlView\Forecast.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CtrlView\Forecast.Designer.cs">
+      <DependentUpon>Forecast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CtrlView\Query.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CtrlView\Query.Designer.cs">
+      <DependentUpon>Query.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CtrlView\SetAlgorithm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CtrlView\SetAlgorithm.Designer.cs">
+      <DependentUpon>SetAlgorithm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Login.Designer.cs">
+      <DependentUpon>F_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_UserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_UserForm.Designer.cs">
+      <DependentUpon>F_UserForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtrlView\EquipConfig.resx">
+      <DependentUpon>EquipConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtrlView\FileConfig.resx">
+      <DependentUpon>FileConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtrlView\Forecast.resx">
+      <DependentUpon>Forecast.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtrlView\Query.resx">
+      <DependentUpon>Query.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtrlView\SetAlgorithm.resx">
+      <DependentUpon>SetAlgorithm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Login.resx">
+      <DependentUpon>F_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_UserForm.resx">
+      <DependentUpon>F_UserForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

@@ -1,17 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace GAS.UI
+namespace GAS.UI.CtrlView
 {
-    public partial class Form1 : Form
+    public partial class EquipConfig : UserControl
     {
-        public Form1()
+        public EquipConfig()
         {
             InitializeComponent();
         }
