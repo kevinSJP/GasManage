@@ -1,6 +1,6 @@
 ﻿namespace GAS.UI.CtrlView
 {
-    partial class SetAlgorithm
+    partial class C_SetAlgorithm
     {
         /// <summary> 
         /// 必需的设计器变量。

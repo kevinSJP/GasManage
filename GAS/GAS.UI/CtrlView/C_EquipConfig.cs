@@ -9,21 +9,11 @@ using System.Windows.Forms;
 
 namespace GAS.UI.CtrlView
 {
-    public partial class Forecast : UserControl
+    public partial class C_EquipConfig : UserControl
     {
-        public Forecast()
+        public C_EquipConfig()
         {
             InitializeComponent();
-        }
-
-        private void btn_FCST_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_err_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

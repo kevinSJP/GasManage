@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace GAS.UI.CtrlView
 {
-    public partial class EquipConfig : UserControl
+    public partial class C_FileConfig : UserControl
     {
-        public EquipConfig()
+        public C_FileConfig()
         {
             InitializeComponent();
         }

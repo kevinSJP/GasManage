@@ -67,6 +67,7 @@
             this.textPass.Size = new System.Drawing.Size(119, 21);
             this.textPass.TabIndex = 17;
             this.textPass.Text = "sa";
+            this.textPass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textPass_KeyPress);
             // 
             // textName
             // 
@@ -76,6 +77,7 @@
             this.textName.Size = new System.Drawing.Size(119, 21);
             this.textName.TabIndex = 16;
             this.textName.Text = "Admin";
+            this.textName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textName_KeyPress);
             // 
             // butClose
             // 
@@ -95,6 +97,7 @@
             this.butLogin.TabIndex = 14;
             this.butLogin.Text = "登录";
             this.butLogin.UseVisualStyleBackColor = true;
+            this.butLogin.Click += new System.EventHandler(this.butLogin_Click);
             // 
             // pictureBox1
             // 
@@ -122,6 +125,8 @@
             this.Name = "F_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "登陆";
+            this.Activated += new System.EventHandler(this.F_Login_Activated);
+            this.Load += new System.EventHandler(this.F_Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

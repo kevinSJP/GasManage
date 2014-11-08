@@ -1,6 +1,6 @@
 ﻿namespace GAS.UI.CtrlView
 {
-    partial class Query
+    partial class C_Query
     {
         /// <summary> 
         /// 必需的设计器变量。

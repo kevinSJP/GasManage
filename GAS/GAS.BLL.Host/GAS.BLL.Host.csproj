@@ -42,6 +42,16 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GAS.BLL.Contracts\GAS.BLL.Contracts.csproj">
+      <Project>{8d2163d1-8139-4fe3-b2a8-fdd7694906b5}</Project>
+      <Name>GAS.BLL.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GAS.DAL\GAS.DAL.csproj">
+      <Project>{9498e292-af2c-4be5-bb9d-d2a392494d3e}</Project>
+      <Name>GAS.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -1,6 +1,6 @@
 ﻿namespace GAS.UI.CtrlView
 {
-    partial class FileConfig
+    partial class C_FileConfig
     {
         /// <summary> 
         /// 必需的设计器变量。

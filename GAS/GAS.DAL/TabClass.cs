@@ -5,7 +5,7 @@ using System.Text;
 
 namespace GAS.DAL
 {
-    public class Class1
+    public class TabClass
     {
     }
 }

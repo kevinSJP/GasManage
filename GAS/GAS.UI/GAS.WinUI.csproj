@@ -48,42 +48,79 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminForm.cs">
+    <Compile Include="FormView\F_AddAlgorithm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminForm.Designer.cs">
-      <DependentUpon>AdminForm.cs</DependentUpon>
+    <Compile Include="FormView\F_AddAlgorithm.Designer.cs">
+      <DependentUpon>F_AddAlgorithm.cs</DependentUpon>
     </Compile>
-    <Compile Include="CtrlView\EquipConfig.cs">
+    <Compile Include="FormView\F_AddEquip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormView\F_AddEquip.Designer.cs">
+      <DependentUpon>F_AddEquip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormView\F_ClearData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormView\F_ClearData.Designer.cs">
+      <DependentUpon>F_ClearData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormView\F_ErrShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormView\F_ErrShow.Designer.cs">
+      <DependentUpon>F_ErrShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormView\F_HaveBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormView\F_HaveBack.Designer.cs">
+      <DependentUpon>F_HaveBack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormView\F_SetFCSTPara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormView\F_SetFCSTPara.Designer.cs">
+      <DependentUpon>F_SetFCSTPara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_AdminForm.Designer.cs">
+      <DependentUpon>F_AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CtrlView\C_EquipConfig.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CtrlView\EquipConfig.Designer.cs">
-      <DependentUpon>EquipConfig.cs</DependentUpon>
+    <Compile Include="CtrlView\C_EquipConfig.Designer.cs">
+      <DependentUpon>C_EquipConfig.cs</DependentUpon>
     </Compile>
-    <Compile Include="CtrlView\FileConfig.cs">
+    <Compile Include="CtrlView\C_FileConfig.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CtrlView\FileConfig.Designer.cs">
-      <DependentUpon>FileConfig.cs</DependentUpon>
+    <Compile Include="CtrlView\C_FileConfig.Designer.cs">
+      <DependentUpon>C_FileConfig.cs</DependentUpon>
     </Compile>
-    <Compile Include="CtrlView\Forecast.cs">
+    <Compile Include="CtrlView\C_Forecast.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CtrlView\Forecast.Designer.cs">
-      <DependentUpon>Forecast.cs</DependentUpon>
+    <Compile Include="CtrlView\C_Forecast.Designer.cs">
+      <DependentUpon>C_Forecast.cs</DependentUpon>
     </Compile>
-    <Compile Include="CtrlView\Query.cs">
+    <Compile Include="CtrlView\C_Query.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CtrlView\Query.Designer.cs">
-      <DependentUpon>Query.cs</DependentUpon>
+    <Compile Include="CtrlView\C_Query.Designer.cs">
+      <DependentUpon>C_Query.cs</DependentUpon>
     </Compile>
-    <Compile Include="CtrlView\SetAlgorithm.cs">
+    <Compile Include="CtrlView\C_SetAlgorithm.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CtrlView\SetAlgorithm.Designer.cs">
-      <DependentUpon>SetAlgorithm.cs</DependentUpon>
+    <Compile Include="CtrlView\C_SetAlgorithm.Designer.cs">
+      <DependentUpon>C_SetAlgorithm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModuleClass\UIData.cs" />
     <Compile Include="F_Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,25 +133,38 @@
     <Compile Include="F_UserForm.Designer.cs">
       <DependentUpon>F_UserForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModuleClass\UIJump.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AdminForm.resx">
-      <DependentUpon>AdminForm.cs</DependentUpon>
+    <EmbeddedResource Include="FormView\F_AddAlgorithm.resx">
+      <DependentUpon>F_AddAlgorithm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CtrlView\EquipConfig.resx">
-      <DependentUpon>EquipConfig.cs</DependentUpon>
+    <EmbeddedResource Include="FormView\F_AddEquip.resx">
+      <DependentUpon>F_AddEquip.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CtrlView\FileConfig.resx">
-      <DependentUpon>FileConfig.cs</DependentUpon>
+    <EmbeddedResource Include="FormView\F_ErrShow.resx">
+      <DependentUpon>F_ErrShow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CtrlView\Forecast.resx">
-      <DependentUpon>Forecast.cs</DependentUpon>
+    <EmbeddedResource Include="FormView\F_HaveBack.resx">
+      <DependentUpon>F_HaveBack.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CtrlView\Query.resx">
-      <DependentUpon>Query.cs</DependentUpon>
+    <EmbeddedResource Include="F_AdminForm.resx">
+      <DependentUpon>F_AdminForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CtrlView\SetAlgorithm.resx">
-      <DependentUpon>SetAlgorithm.cs</DependentUpon>
+    <EmbeddedResource Include="CtrlView\C_EquipConfig.resx">
+      <DependentUpon>C_EquipConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtrlView\C_FileConfig.resx">
+      <DependentUpon>C_FileConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtrlView\C_Forecast.resx">
+      <DependentUpon>C_Forecast.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtrlView\C_Query.resx">
+      <DependentUpon>C_Query.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtrlView\C_SetAlgorithm.resx">
+      <DependentUpon>C_SetAlgorithm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F_Login.resx">
       <DependentUpon>F_Login.cs</DependentUpon>
@@ -141,6 +191,13 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GAS.BLL.Contracts\GAS.BLL.Contracts.csproj">
+      <Project>{8d2163d1-8139-4fe3-b2a8-fdd7694906b5}</Project>
+      <Name>GAS.BLL.Contracts</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

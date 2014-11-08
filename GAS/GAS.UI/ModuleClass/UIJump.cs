@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace GAS.BLL.Contracts
+namespace GAS.UI.ModuleClass
 {
-    public interface IQuery
+    class UIJump
     {
     }
 }

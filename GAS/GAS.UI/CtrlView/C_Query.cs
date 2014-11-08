@@ -9,16 +9,13 @@ using System.Windows.Forms;
 
 namespace GAS.UI.CtrlView
 {
-    public partial class SetAlgorithm : UserControl
+    public partial class C_Query : UserControl
     {
-        public SetAlgorithm()
+        public C_Query()
         {
             InitializeComponent();
         }
 
-        private void btn_Right_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

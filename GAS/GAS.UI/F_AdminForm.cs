@@ -1,21 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace GAS.UI.CtrlView
+namespace GAS.UI
 {
-    public partial class Query : UserControl
+    public partial class F_AdminForm : Form
     {
-        public Query()
+        public F_AdminForm()
         {
             InitializeComponent();
         }
-
-        
     }
 }

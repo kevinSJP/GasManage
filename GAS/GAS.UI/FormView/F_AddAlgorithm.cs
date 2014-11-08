@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace GAS.UI
+namespace GAS.UI.FormView
 {
-    public partial class AdminForm : Form
+    public partial class F_AddAlgorithm : Form
     {
-        public AdminForm()
+        public F_AddAlgorithm()
         {
             InitializeComponent();
         }
