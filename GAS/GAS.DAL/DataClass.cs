@@ -20,14 +20,17 @@ namespace GAS.DAL
         /// <param name="Name">姓名</param>
         /// <param name="Pass">密码</param>
         /// <returns>check结果</returns>
-        bool LoginChek(string Name, string Pass)
+        bool[] LoginChek(string Name, string Pass)
         {
-            SqlDataReader temDR = baseClass.getcom("select * from tb_Login where Name='" + Name + "' and Pass='" + Pass + "'");
-            bool ifcom = temDR.Read();
-            if (ifcom)
+            bool[] ifcom=new bool[2];
+            SqlDataReader temDR = baseClass.getcom("select * from UserPope where Name='" + Name + "' and Pass='" + Pass + "'");
+            ifcom[0] = temDR.Read();
+            if (ifcom[0])
             {
                 BaseClass.My_con.Close();
                 BaseClass.My_con.Dispose();
+                string i = temDR.GetString(4);
+                ifcom[1]= bool.Parse(i);
             }
             BaseClass.con_close();
             return ifcom;

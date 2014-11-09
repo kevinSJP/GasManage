@@ -14,9 +14,7 @@ namespace GAS.UI
     public partial class F_Login : Form
     {
 
-        #region 定义
-        F_AdminForm adminForm;
-        F_UserForm userform;
+        #region 定义   
         IDAL  DALFunc;
         #endregion
 
@@ -34,19 +32,35 @@ namespace GAS.UI
         {
             if (textName.Text != "" & textPass.Text != "")
             {
-                bool LoginRes = DALFunc.LoginChek(textName.Text.Trim(), textPass.Text.Trim());
+                bool[] LoginRes = DALFunc.LoginChek(textName.Text.Trim(), textPass.Text.Trim());
+                //bool[] LoginRes = new bool[2]; LoginRes[0] = true; LoginRes[1] = true;
 
-                if (LoginRes)
+                if (LoginRes[0])
                 {
                     ModuleClass.UIData.Login_Name = textName.Text.Trim();
-                    ModuleClass.UIData.Login_n = (int)(this.Tag);
+                    //ModuleClass.UIData.Login_n = (int)(this.Tag);
                     //this.Close();
+                    if (LoginRes[1])
+                    {
+                        F_AdminForm adminForm = new F_AdminForm();
+                        adminForm.Show();
+                        adminForm.Dispose();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        F_UserForm userform=new F_UserForm();
+                        userform.Show();
+                        userform.Dispose();
+                        this.Hide();
+                    }
                 }
                 else
                 {
                     MessageBox.Show("用户名或密码错误！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     textName.Text = "";
                     textPass.Text = "";
+                    
                 }
                 
 

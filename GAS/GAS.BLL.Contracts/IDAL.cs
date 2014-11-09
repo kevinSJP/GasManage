@@ -9,7 +9,7 @@ namespace GAS.BLL
     public interface IDAL
     {
 
-        bool LoginChek(string Name, string Pass);
+        bool[] LoginChek(string Name, string Pass);
         void TestCon();
     }
 }
