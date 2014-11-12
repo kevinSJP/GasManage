@@ -17,3 +17,4 @@ K:\Users\SJP\Documents\GitHub\GasManage\GAS\GAS.UI\obj\Debug\GAS.UI.CtrlView.C_F
 K:\Users\SJP\Documents\GitHub\GasManage\GAS\GAS.UI\obj\Debug\GAS.UI.CtrlView.C_Forecast.resources
 K:\Users\SJP\Documents\GitHub\GasManage\GAS\GAS.UI\obj\Debug\GAS.UI.CtrlView.C_Query.resources
 K:\Users\SJP\Documents\GitHub\GasManage\GAS\GAS.UI\obj\Debug\GAS.UI.CtrlView.C_SetAlgorithm.resources
+K:\Users\SJP\Documents\GitHub\GasManage\GAS\GAS.UI\obj\Debug\GAS.UI.FormView.F_User.resources

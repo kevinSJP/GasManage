@@ -39,7 +39,7 @@
             this.lbox_L3 = new System.Windows.Forms.ListBox();
             this.btn_create = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtbox_Num = new System.Windows.Forms.TextBox();
             this.lab_Num = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_Delete = new System.Windows.Forms.Button();
@@ -66,6 +66,7 @@
             this.btn_Left.TabIndex = 1;
             this.btn_Left.Text = "左移";
             this.btn_Left.UseVisualStyleBackColor = true;
+            this.btn_Left.Click += new System.EventHandler(this.btn_Left_Click);
             // 
             // btn_Right
             // 
@@ -75,6 +76,7 @@
             this.btn_Right.TabIndex = 2;
             this.btn_Right.Text = "右移";
             this.btn_Right.UseVisualStyleBackColor = true;
+            this.btn_Right.Click += new System.EventHandler(this.btn_Right_Click);
             // 
             // tabControl1
             // 
@@ -157,22 +159,23 @@
             this.btn_create.TabIndex = 9;
             this.btn_create.Text = "创建表";
             this.btn_create.UseVisualStyleBackColor = true;
+            this.btn_create.Click += new System.EventHandler(this.btn_create_Click);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtbox_Num);
             this.panel1.Controls.Add(this.lab_Num);
             this.panel1.Location = new System.Drawing.Point(554, 6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(317, 100);
             this.panel1.TabIndex = 10;
             // 
-            // textBox1
+            // txtbox_Num
             // 
-            this.textBox1.Location = new System.Drawing.Point(110, 40);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 21);
-            this.textBox1.TabIndex = 10;
+            this.txtbox_Num.Location = new System.Drawing.Point(110, 40);
+            this.txtbox_Num.Name = "txtbox_Num";
+            this.txtbox_Num.Size = new System.Drawing.Size(100, 21);
+            this.txtbox_Num.TabIndex = 10;
             // 
             // lab_Num
             // 
@@ -203,6 +206,7 @@
             this.btn_Delete.TabIndex = 7;
             this.btn_Delete.Text = "删除";
             this.btn_Delete.UseVisualStyleBackColor = true;
+            this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
             // 
             // btn_Add
             // 
@@ -212,6 +216,7 @@
             this.btn_Add.TabIndex = 6;
             this.btn_Add.Text = "添加";
             this.btn_Add.UseVisualStyleBackColor = true;
+            this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
             // 
             // lbox_Type
             // 
@@ -242,6 +247,7 @@
             this.btn_Update.TabIndex = 8;
             this.btn_Update.Text = "更改";
             this.btn_Update.UseVisualStyleBackColor = true;
+            this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
             // 
             // btn_Read
             // 
@@ -251,6 +257,7 @@
             this.btn_Read.TabIndex = 7;
             this.btn_Read.Text = "读取";
             this.btn_Read.UseVisualStyleBackColor = true;
+            this.btn_Read.Click += new System.EventHandler(this.btn_Read_Click);
             // 
             // lbox_Equip
             // 
@@ -274,6 +281,7 @@
             this.Controls.Add(this.btn_Left);
             this.Name = "C_EquipConfig";
             this.Size = new System.Drawing.Size(944, 457);
+            this.Load += new System.EventHandler(this.C_EquipConfig_Load);
             this.tabControl1.ResumeLayout(false);
             this.tbPage_L1.ResumeLayout(false);
             this.tbPage_L2.ResumeLayout(false);
@@ -295,7 +303,7 @@
         private System.Windows.Forms.TabPage tbPage_L2;
         private System.Windows.Forms.Button btn_create;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtbox_Num;
         private System.Windows.Forms.Label lab_Num;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btn_Delete;

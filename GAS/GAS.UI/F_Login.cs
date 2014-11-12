@@ -30,47 +30,14 @@ namespace GAS.UI
 
         private void butLogin_Click(object sender, EventArgs e)
         {
-            if (textName.Text != "" & textPass.Text != "")
-            {
-                bool[] LoginRes = DALFunc.LoginChek(textName.Text.Trim(), textPass.Text.Trim());
-                //bool[] LoginRes = new bool[2]; LoginRes[0] = true; LoginRes[1] = true;
-
-                if (LoginRes[0])
-                {
-                    ModuleClass.UIData.Login_Name = textName.Text.Trim();
-                    //ModuleClass.UIData.Login_n = (int)(this.Tag);
-                    //this.Close();
-                    if (LoginRes[1])
-                    {
-                        F_AdminForm adminForm = new F_AdminForm();
-                        adminForm.Show();
-                        adminForm.Dispose();
-                        this.Hide();
-                    }
-                    else
-                    {
-                        F_UserForm userform=new F_UserForm();
-                        userform.Show();
-                        userform.Dispose();
-                        this.Hide();
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("用户名或密码错误！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    textName.Text = "";
-                    textPass.Text = "";
-                    
-                }
-                
-
-                MessageBox.Show("用户名或密码错误！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                textName.Text = "";
-                textPass.Text = "";
-            }
-            else
-                MessageBox.Show("请将登录信息添写完整！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            /////////登陆验证/////////
+            LoginFoemation();
+            ////////测试方法/////////
+            //TestLogin();
+            
         }
+
+
 
         private void F_Login_Activated(object sender, EventArgs e)
         {
@@ -91,6 +58,16 @@ namespace GAS.UI
 
         private void F_Login_Load(object sender, EventArgs e)
         {
+            ///////测试数据库连接/////////
+            LoadFormation();
+            
+        }
+
+        /// <summary>
+        /// 测试数据库连接
+        /// </summary>
+        private void LoadFormation()
+        {
             try
             {
                 DALFunc.TestCon();
@@ -103,5 +80,77 @@ namespace GAS.UI
                 Application.Exit();
             }
         }
+
+        /// <summary>
+        /// 登录验证
+        /// </summary>
+        private void LoginFoemation()
+        {
+            if (textName.Text != "" & textPass.Text != "")
+            {
+                bool[] LoginRes = DALFunc.LoginChek(textName.Text.Trim(), textPass.Text.Trim());
+                //bool[] LoginRes = new bool[2]; LoginRes[0] = true; LoginRes[1] = true;
+
+                if (LoginRes[0])
+                {
+                    ModuleClass.UIData.Login_Name = textName.Text.Trim();
+                    //ModuleClass.UIData.Login_n = (int)(this.Tag);
+                    //this.Close();
+                    if (LoginRes[1])
+                    {
+                        if (DialogResult.Yes == MessageBox.Show("您是否使用配置功能?", "通讯录", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+                        {
+                            F_AdminForm adminForm = new F_AdminForm();
+                            adminForm.Show();
+                            adminForm.Dispose();
+                            this.Hide();
+                        }
+                        else
+                        {
+                            F_UserForm userform = new F_UserForm();
+                            userform.Show();
+                            userform.Dispose();
+                            this.Hide();
+                        }
+
+                        
+                    }
+                    else
+                    {
+                        F_UserForm userform = new F_UserForm();
+                        userform.Show();
+                        userform.Dispose();
+                        this.Hide();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("用户名或密码错误！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    textName.Text = "";
+                    textPass.Text = "";
+
+                }
+
+
+                MessageBox.Show("用户名或密码错误！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                textName.Text = "";
+                textPass.Text = "";
+            }
+            else
+                MessageBox.Show("请将登录信息添写完整！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        /// <summary>
+        /// 跳转测试用
+        /// </summary>
+        private void TestLogin()
+        {
+            F_AdminForm adminForm = new F_AdminForm();
+            adminForm.Show();
+            adminForm.Dispose();
+            this.Hide();
+        }
+
+
     }
 }

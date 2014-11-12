@@ -72,7 +72,7 @@
             // 
             this.spCtn.Panel2.Controls.Add(this.tbCtrl);
             this.spCtn.Size = new System.Drawing.Size(742, 461);
-            this.spCtn.SplitterDistance = 105;
+            this.spCtn.SplitterDistance = 104;
             this.spCtn.TabIndex = 2;
             // 
             // CkListBox1
@@ -87,7 +87,7 @@
             "预测误差"});
             this.CkListBox1.Location = new System.Drawing.Point(392, 0);
             this.CkListBox1.Name = "CkListBox1";
-            this.CkListBox1.Size = new System.Drawing.Size(185, 105);
+            this.CkListBox1.Size = new System.Drawing.Size(185, 104);
             this.CkListBox1.TabIndex = 3;
             // 
             // panel1
@@ -101,7 +101,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(392, 105);
+            this.panel1.Size = new System.Drawing.Size(392, 104);
             this.panel1.TabIndex = 0;
             // 
             // lab_EndTime
@@ -169,6 +169,7 @@
             this.btn_Query.TabIndex = 2;
             this.btn_Query.Text = "查询";
             this.btn_Query.UseVisualStyleBackColor = true;
+            this.btn_Query.Click += new System.EventHandler(this.btn_Query_Click);
             // 
             // tbCtrl
             // 
@@ -179,7 +180,7 @@
             this.tbCtrl.Location = new System.Drawing.Point(0, 0);
             this.tbCtrl.Name = "tbCtrl";
             this.tbCtrl.SelectedIndex = 0;
-            this.tbCtrl.Size = new System.Drawing.Size(742, 352);
+            this.tbCtrl.Size = new System.Drawing.Size(742, 353);
             this.tbCtrl.TabIndex = 0;
             // 
             // tabPage1
@@ -188,7 +189,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(734, 326);
+            this.tabPage1.Size = new System.Drawing.Size(734, 327);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "图表";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -205,7 +206,7 @@
             this.zg1.ScrollMinX = 0D;
             this.zg1.ScrollMinY = 0D;
             this.zg1.ScrollMinY2 = 0D;
-            this.zg1.Size = new System.Drawing.Size(728, 320);
+            this.zg1.Size = new System.Drawing.Size(728, 321);
             this.zg1.TabIndex = 0;
             // 
             // tabPage2
@@ -214,7 +215,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(977, 323);
+            this.tabPage2.Size = new System.Drawing.Size(734, 326);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "数据";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -226,16 +227,17 @@
             this.DG1.Location = new System.Drawing.Point(3, 3);
             this.DG1.Name = "DG1";
             this.DG1.RowTemplate.Height = 23;
-            this.DG1.Size = new System.Drawing.Size(971, 317);
+            this.DG1.Size = new System.Drawing.Size(728, 320);
             this.DG1.TabIndex = 0;
             // 
-            // Query
+            // C_Query
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.spCtn);
-            this.Name = "Query";
+            this.Name = "C_Query";
             this.Size = new System.Drawing.Size(742, 461);
+            this.Load += new System.EventHandler(this.C_Query_Load);
             this.spCtn.Panel1.ResumeLayout(false);
             this.spCtn.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.spCtn)).EndInit();

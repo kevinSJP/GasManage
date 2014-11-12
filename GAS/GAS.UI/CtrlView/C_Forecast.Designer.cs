@@ -43,9 +43,10 @@
             this.btn_Err = new System.Windows.Forms.Button();
             this.btn_Para = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.lbl3 = new System.Windows.Forms.Label();
             this.btn_FCST = new System.Windows.Forms.Button();
+            this.cbox1 = new System.Windows.Forms.ComboBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.spCtn)).BeginInit();
             this.spCtn.Panel1.SuspendLayout();
@@ -200,23 +201,17 @@
             this.btn_Para.TabIndex = 8;
             this.btn_Para.Text = "参数设置";
             this.btn_Para.UseVisualStyleBackColor = true;
+            this.btn_Para.Click += new System.EventHandler(this.btn_Para_Click);
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.textBox3);
+            this.panel2.Controls.Add(this.cbox1);
             this.panel2.Controls.Add(this.lbl3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(151, 101);
             this.panel2.TabIndex = 7;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(22, 53);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(81, 21);
-            this.textBox3.TabIndex = 1;
             // 
             // lbl3
             // 
@@ -237,6 +232,14 @@
             this.btn_FCST.UseVisualStyleBackColor = true;
             this.btn_FCST.Click += new System.EventHandler(this.btn_FCST_Click);
             // 
+            // cbox1
+            // 
+            this.cbox1.FormattingEnabled = true;
+            this.cbox1.Location = new System.Drawing.Point(22, 50);
+            this.cbox1.Name = "cbox1";
+            this.cbox1.Size = new System.Drawing.Size(121, 20);
+            this.cbox1.TabIndex = 1;
+            // 
             // C_Forecast
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -244,6 +247,7 @@
             this.Controls.Add(this.spCtn);
             this.Name = "C_Forecast";
             this.Size = new System.Drawing.Size(747, 462);
+            this.Load += new System.EventHandler(this.C_Forecast_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.spCtn.Panel1.ResumeLayout(false);
@@ -276,8 +280,9 @@
         private System.Windows.Forms.Button btn_Err;
         private System.Windows.Forms.Button btn_Para;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label lbl3;
         private System.Windows.Forms.Button btn_FCST;
+        private System.Windows.Forms.ComboBox cbox1;
+        private System.Windows.Forms.Timer timer1;
     }
 }

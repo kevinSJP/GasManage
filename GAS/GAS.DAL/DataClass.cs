@@ -27,20 +27,32 @@ namespace GAS.DAL
             ifcom[0] = temDR.Read();
             if (ifcom[0])
             {
-                BaseClass.My_con.Close();
-                BaseClass.My_con.Dispose();
+                baseClass.My_con.Close();
+                baseClass.My_con.Dispose();
                 string i = temDR.GetString(4);
                 ifcom[1]= bool.Parse(i);
             }
-            BaseClass.con_close();
+            baseClass.con_close();
             return ifcom;
         }
 
+        /// <summary>
+        /// 测试数据库连接
+        /// </summary>
         void TestCon()
         {
             baseClass.con_open();  //连接数据库
-            BaseClass.con_close();
+            baseClass.con_close();
             
         }
+
+        DataSet QueryTable(string TableName)
+        {
+            DataSet returndataset = baseClass.getDataSet("select * from" + TableName, TableName);
+            return returndataset;
+        
+        }
+    
+    
     }
 }

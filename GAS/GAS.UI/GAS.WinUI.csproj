@@ -84,6 +84,12 @@
     <Compile Include="FormView\F_SetFCSTPara.Designer.cs">
       <DependentUpon>F_SetFCSTPara.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormView\F_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormView\F_User.Designer.cs">
+      <DependentUpon>F_User.cs</DependentUpon>
+    </Compile>
     <Compile Include="F_AdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +126,7 @@
     <Compile Include="CtrlView\C_SetAlgorithm.Designer.cs">
       <DependentUpon>C_SetAlgorithm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModuleClass\FuncClass.cs" />
     <Compile Include="ModuleClass\UIData.cs" />
     <Compile Include="F_Login.cs">
       <SubType>Form</SubType>
@@ -134,6 +141,8 @@
       <DependentUpon>F_UserForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ModuleClass\UIJump.cs" />
+    <Compile Include="ModuleClass\UIMenu.cs" />
+    <Compile Include="ModuleClass\UITree.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormView\F_AddAlgorithm.resx">
@@ -147,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormView\F_HaveBack.resx">
       <DependentUpon>F_HaveBack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormView\F_User.resx">
+      <DependentUpon>F_User.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F_AdminForm.resx">
       <DependentUpon>F_AdminForm.cs</DependentUpon>

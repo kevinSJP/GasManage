@@ -99,6 +99,7 @@
             this.btn_Left.TabIndex = 7;
             this.btn_Left.Text = "左移";
             this.btn_Left.UseVisualStyleBackColor = true;
+            this.btn_Left.Click += new System.EventHandler(this.btn_Left_Click);
             // 
             // lbox_UsedAlg
             // 
@@ -117,16 +118,18 @@
             this.btn_Enter.TabIndex = 2;
             this.btn_Enter.Text = "确认";
             this.btn_Enter.UseVisualStyleBackColor = true;
+            this.btn_Enter.Click += new System.EventHandler(this.btn_Enter_Click);
             // 
-            // SetAlgorithm
+            // C_SetAlgorithm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btn_Enter);
             this.Controls.Add(this.gbox2);
             this.Controls.Add(this.gbox1);
-            this.Name = "SetAlgorithm";
+            this.Name = "C_SetAlgorithm";
             this.Size = new System.Drawing.Size(944, 467);
+            this.Load += new System.EventHandler(this.C_SetAlgorithm_Load);
             this.gbox1.ResumeLayout(false);
             this.gbox2.ResumeLayout(false);
             this.ResumeLayout(false);

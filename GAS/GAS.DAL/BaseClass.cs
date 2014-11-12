@@ -10,8 +10,8 @@ namespace GAS.DAL
     public class BaseClass
     {
         #region  全局变量
-        public  string My_SQL = "", My_Table = "", My_Field = "";  //定义全局变量，记录“基础信息”各窗体中的表名及SQL语句
-        public static SqlConnection My_con;  //定义一个SqlConnection类型的公共变量My_con，用于判断数据库是否连接成功
+        public string My_SQL = "", My_Table = "", My_Field = "";  //定义全局变量，记录“基础信息”各窗体中的表名及SQL语句
+        public SqlConnection My_con;  //定义一个SqlConnection类型的公共变量My_con，用于判断数据库是否连接成功
         public static string M_str_sqlcon = "Data Source=localhost;Database=db_GAS;User id=sa;PWD=123456";
 
         #endregion
@@ -21,7 +21,7 @@ namespace GAS.DAL
         /// 建立数据库连接.
         /// </summary>
         /// <returns>返回SqlConnection对象</returns>
-        public static SqlConnection getcon()
+        public SqlConnection getcon()
         {
             My_con = new SqlConnection(M_str_sqlcon);   //用SqlConnection对象与指定的数据库相连接
             My_con.Open();                              //打开数据库连接
@@ -44,7 +44,7 @@ namespace GAS.DAL
         /// <summary>
         /// 关闭于数据库的连接.
         /// </summary>
-        public static void con_close()
+        public  void con_close()
         {
             if (My_con.State == ConnectionState.Open)   //判断是否打开与数据库的连接
             {

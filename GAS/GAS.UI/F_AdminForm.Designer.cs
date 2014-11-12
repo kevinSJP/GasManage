@@ -38,7 +38,7 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.btn_UserMana = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.btn_ReLogin = new System.Windows.Forms.ToolStripButton();
+            this.btn_Complet = new System.Windows.Forms.ToolStripButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.toolStrip1.SuspendLayout();
@@ -58,7 +58,7 @@
             this.toolStripSeparator3,
             this.btn_UserMana,
             this.toolStripSeparator4,
-            this.btn_ReLogin});
+            this.btn_Complet});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(944, 34);
@@ -73,6 +73,7 @@
             this.btn_EquipConf.Name = "btn_EquipConf";
             this.btn_EquipConf.Size = new System.Drawing.Size(248, 31);
             this.btn_EquipConf.Text = "设备与节点数配置";
+            this.btn_EquipConf.Click += new System.EventHandler(this.btn_EquipConf_Click);
             // 
             // toolStripSeparator1
             // 
@@ -89,6 +90,7 @@
             this.btn_FileConf.Size = new System.Drawing.Size(190, 31);
             this.btn_FileConf.Text = "算法文件管理";
             this.btn_FileConf.ToolTipText = "算法文件管理";
+            this.btn_FileConf.Click += new System.EventHandler(this.btn_FileConf_Click);
             // 
             // toolStripSeparator2
             // 
@@ -104,6 +106,7 @@
             this.btn_AlgConf.Size = new System.Drawing.Size(190, 31);
             this.btn_AlgConf.Text = "预测算法配置";
             this.btn_AlgConf.ToolTipText = "预测算法配置";
+            this.btn_AlgConf.Click += new System.EventHandler(this.btn_AlgConf_Click);
             // 
             // toolStripSeparator3
             // 
@@ -118,20 +121,22 @@
             this.btn_UserMana.Name = "btn_UserMana";
             this.btn_UserMana.Size = new System.Drawing.Size(132, 31);
             this.btn_UserMana.Text = "用户管理";
+            this.btn_UserMana.Click += new System.EventHandler(this.btn_UserMana_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
             this.toolStripSeparator4.Size = new System.Drawing.Size(6, 34);
             // 
-            // btn_ReLogin
+            // btn_Complet
             // 
-            this.btn_ReLogin.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btn_ReLogin.Image = ((System.Drawing.Image)(resources.GetObject("btn_ReLogin.Image")));
-            this.btn_ReLogin.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_ReLogin.Name = "btn_ReLogin";
-            this.btn_ReLogin.Size = new System.Drawing.Size(132, 31);
-            this.btn_ReLogin.Text = "配置完成";
+            this.btn_Complet.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.btn_Complet.Image = ((System.Drawing.Image)(resources.GetObject("btn_Complet.Image")));
+            this.btn_Complet.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Complet.Name = "btn_Complet";
+            this.btn_Complet.Size = new System.Drawing.Size(132, 31);
+            this.btn_Complet.Text = "配置完成";
+            this.btn_Complet.Click += new System.EventHandler(this.btn_Complet_Click);
             // 
             // panel1
             // 
@@ -162,6 +167,8 @@
             this.Name = "F_AdminForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "系统配置工具";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.F_AdminForm_FormClosed);
+            this.Load += new System.EventHandler(this.F_AdminForm_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -183,7 +190,7 @@
         private System.Windows.Forms.ToolStripButton btn_UserMana;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
-        private System.Windows.Forms.ToolStripButton btn_ReLogin;
+        private System.Windows.Forms.ToolStripButton btn_Complet;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

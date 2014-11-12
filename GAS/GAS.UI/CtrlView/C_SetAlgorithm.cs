@@ -6,11 +6,15 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using GAS.BLL;
 
 namespace GAS.UI.CtrlView
 {
     public partial class C_SetAlgorithm : UserControl
     {
+        IDAL DALFunc;
+        DataSet dataset = new DataSet();
+
         public C_SetAlgorithm()
         {
             InitializeComponent();
@@ -18,7 +22,31 @@ namespace GAS.UI.CtrlView
 
         private void btn_Right_Click(object sender, EventArgs e)
         {
+            lbox_UsedAlg.Items.Add(lbox_Alg.SelectedItem);
+        }
 
+        private void C_SetAlgorithm_Load(object sender, EventArgs e)
+        {
+            lbox_Equip.Items.Clear();
+            dataset.Clear();
+            dataset = DALFunc.QueryTable("EquipTypeAbl");
+            lbox_Equip.Items.Add(dataset.Tables[0].Rows[1]);
+
+            lbox_Alg.Items.Clear();
+            dataset.Clear();
+            dataset = DALFunc.QueryTable("AlgTypeAbl");
+            lbox_Alg.Items.Add(dataset.Tables[0].Rows[1]);
+        }
+
+        private void btn_Left_Click(object sender, EventArgs e)
+        {
+            lbox_UsedAlg.Items.RemoveAt(lbox_UsedAlg.SelectedIndex);
+        }
+
+        private void btn_Enter_Click(object sender, EventArgs e)
+        {
+            /////更新表AlgTypeSlet
+            /////创建算法表
         }
     }
 }
