@@ -165,5 +165,15 @@ namespace GAS.UI
         {
 
         }
+
+        private void F_UserForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void F_UserForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

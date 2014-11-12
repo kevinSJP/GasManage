@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using GAS.BLL;
+using GAS.DAL;
 
 namespace GAS.UI.CtrlView
 {
     public partial class C_EquipConfig : UserControl
     {
-        IDAL DALFunc;
+        DataClass DALFunc = new DataClass();
         DataSet dataset = new DataSet();
 
         public C_EquipConfig()
@@ -25,13 +26,13 @@ namespace GAS.UI.CtrlView
             
             lbox_Type.Items.Clear();
             dataset.Clear();
-            dataset = DALFunc.QueryTable("EquipTypeAbl");
-            lbox_Type.Items.Add(dataset.Tables[0].Rows[1]);
+            dataset = DALFunc.QueryTable("EquipName", "EquipTypeAbl");
+            lbox_Type.Items.Add(dataset.Tables[0].Rows[1].ToString());
 
             lbox_Equip.Items.Clear();
             dataset.Clear();
             dataset = DALFunc.QueryTable("EquipTypeSlet");
-            lbox_Type.Items.Add(dataset.Tables[0].Rows[1]);
+            //lbox_Type.Items.Add(dataset.Tables[0].Rows[1].ToString());
 
             txtbox_Num.Text = "";
             lbox_L1.Items.Clear();
@@ -49,7 +50,7 @@ namespace GAS.UI.CtrlView
             dataset.Clear();
             lbox_Type.Items.Clear();
             dataset = DALFunc.QueryTable("EquipTypeAbl");
-            lbox_Type.Items.Add(dataset.Tables[0].Rows[1]);
+            lbox_Type.Items.Add(dataset.Tables[0].Rows[1].ToString());
         }
 
         private void btn_Delete_Click(object sender, EventArgs e)
@@ -60,7 +61,7 @@ namespace GAS.UI.CtrlView
             dataset.Clear();
             lbox_Equip.Items.Clear();
             dataset = DALFunc.QueryTable("EquipTypeSlet");
-            lbox_Type.Items.Add(dataset.Tables[0].Rows[1]);
+            lbox_Type.Items.Add(dataset.Tables[0].Rows[1].ToString());
         }
 
         private void btn_Right_Click(object sender, EventArgs e)

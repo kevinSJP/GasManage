@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using GAS.BLL;
+using GAS.DAL;
 
 namespace GAS.UI.CtrlView
 {
     public partial class C_FileConfig : UserControl
     {
-        IDAL DALFunc;
+        DataClass DALFunc = new DataClass();
         DataSet dataset = new DataSet();
         
         public C_FileConfig()

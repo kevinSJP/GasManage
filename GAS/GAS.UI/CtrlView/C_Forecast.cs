@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using GAS.BLL;
+using GAS.DAL;
 using ZedGraph;
 
 namespace GAS.UI.CtrlView
@@ -14,7 +15,7 @@ namespace GAS.UI.CtrlView
     
     public partial class C_Forecast : UserControl
     {
-        IDAL DALFunc;
+        DataClass DALFunc = new DataClass();
         DataSet dataset = new DataSet();
 
         public C_Forecast()

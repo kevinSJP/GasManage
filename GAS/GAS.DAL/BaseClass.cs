@@ -12,7 +12,7 @@ namespace GAS.DAL
         #region  全局变量
         public string My_SQL = "", My_Table = "", My_Field = "";  //定义全局变量，记录“基础信息”各窗体中的表名及SQL语句
         public SqlConnection My_con;  //定义一个SqlConnection类型的公共变量My_con，用于判断数据库是否连接成功
-        public static string M_str_sqlcon = "Data Source=localhost;Database=db_GAS;User id=sa;PWD=123456";
+        public static string M_str_sqlcon = "Data Source=KEVIN;Database=GASManage;User id=sa;PWD=123456";
 
         #endregion
 

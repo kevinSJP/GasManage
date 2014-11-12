@@ -63,9 +63,11 @@ namespace GAS.UI
         private void btn_Complet_Click(object sender, EventArgs e)
         {
             ModuleClass.UIData.CloseConf = false;
-            userform.Show();
-            userform.Dispose();
             this.Close();
+            userform.ShowDialog();
+            
+            userform.Dispose();
+            
 
         }
 

@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using GAS.BLL;
+using GAS.DAL;
 
 namespace GAS.UI
 {
@@ -15,7 +16,8 @@ namespace GAS.UI
     {
 
         #region 定义   
-        IDAL  DALFunc;
+        //IDAL  DALFunc;
+        DataClass DALFunc = new DataClass();
         #endregion
 
         public F_Login()
@@ -101,16 +103,18 @@ namespace GAS.UI
                         if (DialogResult.Yes == MessageBox.Show("您是否使用配置功能?", "通讯录", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
                         {
                             F_AdminForm adminForm = new F_AdminForm();
-                            adminForm.Show();
-                            adminForm.Dispose();
+                            adminForm.ShowDialog();
                             this.Hide();
+                            adminForm.Dispose();
+                            
                         }
                         else
                         {
                             F_UserForm userform = new F_UserForm();
-                            userform.Show();
-                            userform.Dispose();
+                            userform.ShowDialog();
                             this.Hide();
+                            userform.Dispose();
+                            
                         }
 
                         
@@ -132,9 +136,6 @@ namespace GAS.UI
                 }
 
 
-                MessageBox.Show("用户名或密码错误！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                textName.Text = "";
-                textPass.Text = "";
             }
             else
                 MessageBox.Show("请将登录信息添写完整！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);

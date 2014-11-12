@@ -101,13 +101,13 @@
             // 备份还原ToolStripMenuItem
             // 
             this.备份还原ToolStripMenuItem.Name = "备份还原ToolStripMenuItem";
-            this.备份还原ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.备份还原ToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.备份还原ToolStripMenuItem.Text = "备份/还原";
             // 
             // 清空数据库ToolStripMenuItem
             // 
             this.清空数据库ToolStripMenuItem.Name = "清空数据库ToolStripMenuItem";
-            this.清空数据库ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.清空数据库ToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.清空数据库ToolStripMenuItem.Text = "清空数据库";
             // 
             // 常用工具ToolStripMenuItem
@@ -122,13 +122,13 @@
             // 记事本ToolStripMenuItem
             // 
             this.记事本ToolStripMenuItem.Name = "记事本ToolStripMenuItem";
-            this.记事本ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.记事本ToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.记事本ToolStripMenuItem.Text = "记事本";
             // 
             // 计算器ToolStripMenuItem
             // 
             this.计算器ToolStripMenuItem.Name = "计算器ToolStripMenuItem";
-            this.计算器ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.计算器ToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.计算器ToolStripMenuItem.Text = "计算器";
             // 
             // 系统管理ToolStripMenuItem
@@ -228,6 +228,8 @@
             this.Name = "F_UserForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "煤气预测调度";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.F_UserForm_FormClosed);
+            this.Load += new System.EventHandler(this.F_UserForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);

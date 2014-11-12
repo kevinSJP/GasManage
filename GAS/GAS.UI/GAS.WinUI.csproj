@@ -208,6 +208,14 @@
       <Project>{8d2163d1-8139-4fe3-b2a8-fdd7694906b5}</Project>
       <Name>GAS.BLL.Contracts</Name>
     </ProjectReference>
+    <ProjectReference Include="..\GAS.BLL.Host\GAS.BLL.Host.csproj">
+      <Project>{9c134217-6857-4231-b98e-7853d784ad50}</Project>
+      <Name>GAS.BLL.Host</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GAS.DAL\GAS.DAL.csproj">
+      <Project>{9498e292-af2c-4be5-bb9d-d2a392494d3e}</Project>
+      <Name>GAS.DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

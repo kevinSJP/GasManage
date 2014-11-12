@@ -7,13 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using GAS.BLL;
+using GAS.DAL;
 using ZedGraph;
 
 namespace GAS.UI.CtrlView
 {
     public partial class C_Query : UserControl
     {
-        IDAL DALFunc;
+        DataClass DALFunc = new DataClass();
         DataSet dataset = new DataSet();
         
         public C_Query()
